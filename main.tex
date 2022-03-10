@@ -1,0 +1,217 @@
+\documentclass[letterpaper,14pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\newcommand{\link}[2]{{\color{blue}\href{#1}{#2}}}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\centering
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+
+\begin{center}
+    {\LARGE Nikolay Chechulin} \\ \vspace{2pt}
+    % Backend development intern \\
+    \begin{multicols}{2}
+    \begin{flushleft}
+    \link{https://github.com/NChechulin}{GitHub: NChechulin}\\
+    \link{{https://www.linkedin.com/in/nikolay-chechulin-648158202/}}{LinkedIn}
+    \end{flushleft}
+    
+    \begin{flushright}
+    Telegram: @nchechulin \\
+    Email: \link{mailto:nchechulin@aol.com}{nchechulin@aol.com}
+    \end{flushright}
+    \end{multicols}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-2pt}
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Higher School of Economics}{Sep. 2020 -- Present. Graduation date: July 2024}
+      {Data Science and Business Analytics, 2nd year}{Moscow, Russia}
+      
+      \resumeSubheading
+      {School №179}{Sep. 2017 -- June 2020}
+      {Engineering class}{Moscow, Russia}
+      
+      \resumeSubheading
+      {Tinkoff Generation}{Sep. 2018 -- January 2020}
+      {Algorithms and Data Structures}{Moscow, Russia}
+
+  \resumeSubHeadingListEnd
+  \vskip 5pt
+  
+  During the first year of my studies in pilot (advanced) group I learned fundamentals of Algebra, Calculus, Discrete Mathematics and Linear Algebra, also we devoted more than 6 hours a week to learning academic English.
+  Speaking of programming, during the first semester we have been learning basics of Python and Pandas, and during the second -- basics of C++ together with Qt framework.
+  
+  Here are some relevant grades for the 1st year of studies (10 point scale):
+  
+  \begin{multicols}{2}
+  \begin{itemize}
+      \item \textbf{Python} - 10
+      \item \textbf{C++} - 9
+      \item \textbf{Calculus} - 10, 9, 9 (for 1st, 2nd and 3rd semesters)
+      \item \textbf{Discrete Mathematics} - 9
+      \item \textbf{Algorithms and Data Structures} - 9
+      \item \textbf{Best practices in software development} - 10
+      \item \textbf{Probability theory and statistics} - 8
+  \end{itemize}
+  \end{multicols}
+  
+  Speaking of Algorithms and Data Structures, I don't have my grade yet, however, I can claim that I cope with the course successfully.
+  
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Freelancer}{Summer 2019, Summer 2020, Summer 2021}{}{}
+  \resumeSubHeadingListEnd
+  
+  \vskip 5pt
+      
+  I have developed several Web Crawlers using Beautifulsoup, automated browsers using Selenium and developed a few API's which involved interactions with SQL databases.
+  
+  \vskip 8pt
+  
+  Also I have been developing several projects for educational purposes since 2019.
+  Here are some of them:
+  \begin{itemize}
+    \item \link{https://github.com/NChechulin/GNN-project}{Topological and Geometric Deep Learning (in progress)} --- A university research project dedicated to learning Graph Neural Networks and ways to modify input data and existing models in order to increase accuracy.
+    
+    \item \link{https://github.com/NChechulin/python-yandex-contest-tools}{YandexContest tools} --- an automatic solution checker for a programming contest system.
+    Can detect whether a particular solution uses banned or required Python keywords.
+    
+    \item \link{https://github.com/NChechulin/tim}{Tim - ToDo improved} --- a simple CLI ToDo application implemented in Rust
+    
+    \item \link{https://github.com/NChechulin/evolution-of-cells}{Evolution of cells} -- \textbf{(In development, unfinished)} My attempts to research what random occasional mutations can do with a group of cells.
+    Heavily inspired by a \link{https://www.youtube.com/watch?v=SfEZSyvbj2w&list=PLnmlxA5EUR3F4BrpqTl0koT5Cx5aXjBIA}{YouTube series} on genetic algorithm by Foo52ru.
+    
+    \item \link{https://github.com/NChechulin/url-shortener-api}{URL Shortener} - A Flask API for self-hosted URL shortening service.
+    
+    \item \link{https://github.com/NChechulin/apsolutions-intern-test-task}{Text search API} - A Flask API which provides a full-text search over some given data. The project initially has been a test task.
+    
+    \item \link{https://github.com/NChechulin/wiki-game-telegram-bot}{Wiki Game bot} - A Telegram bot which finds a path from a given Wikipedia article to another preselected article.
+    
+    \item \link{https://github.com/NChechulin/markov-chain-telegram-bot}{Markov chain bot} -- A small telegram bot which generates responses using Markov Chain. Implemented in Rust.
+    
+  \end{itemize}
+  
+  My other projects can be found on my \link{https://github.com/NChechulin}{GitHub}.
+
+% %-----------PUBLICATIONS-----------
+% \section{Publications}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%     \textbf{New techniques for Elektronik supersonik laser shootings. WORKSHOP ON INDUSTRY APPLICATION - Molvanîan Academy o Science, 2020 . p. 225-231.}{\\J. Zlad Doe}\\
+%         \textbf{Space Rockets . WORKSHOP ON INDUSTRY APPLICATION - Molvanîan Academy o Science, 2021 . p. 25-31.}{\\J. Zlad Doe, Darth Vapor}\\
+% \ 
+% }}
+%  \end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills, Language Skills, and Interests}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+    % \item{
+    \textbf{OS}{: GNU/Linux (primary), Windows} \\
+    \textbf{Programming Languages}{: Python \textit{(primary one)}, basics of SQL, C\# for desktop development, C++ and basics of Rust} \\
+    \textbf{Libraries}{: Pandas, Flask, Selenium, QT, Numpy, Beautifulsoup}\\
+    \textbf{Version Control}{: Git} \\
+    \textbf{Writing}{: LaTeX, Markdown, Libre Office, Microsoft office} \\
+    \textbf{Soft skills}{: Fast learner, good communicator, responsible employee} \\
+    \textbf{Languages}{: Russian (native), English (IELTS Academic 8.0, C1)} \\
+    \textbf{Interests}{: Free \& Open Source software, Road cycling, Rust, Learning English}
+    % }
+%  \end{itemize}
+
+% %-----------CERTIFICATIONS-----------
+% \section{Extracurricular}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Specialization}{:\href{certification site}{ Course} } 
+%     }}
+%  \end{itemize}
+
+\end{document}
+
