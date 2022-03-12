@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Remove autocompiled file
+rm -rf main.pdf
+
 # Create a directory for output files (don't fail if it exists)
 mkdir -p output
 
