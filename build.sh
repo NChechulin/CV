@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Remove autocompiled file
 rm -rf main.pdf
