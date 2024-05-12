@@ -1,0 +1,170 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[a4paper, 10pt]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Nikolay} \headerlastnamestyle{Chechulin} \\
+	\vspace{2mm}
+	{\faEnvelope\ nchechulin.work@gmail.com} | {\faMobile\ +7(925)356-71-20} | {\faMapMarker\ Moscow, Russia} | {\faGithub\ NChechulin} | {\faTelegram\ \@NChechulin}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Data Science and Business Analytics}
+	{London School of Economics}
+	{Remote}
+	{Sep 2021 – Jul 2024}
+	{}
+	\cventry
+	{BS in Data Science}
+	{Higher School of Economics}
+	{Moscow, Russia}
+	{Sep 2020 – July 2024}
+	{}
+\end{cventries}
+
+\vspace{-5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{HFT Quantitative Trader}
+	{Alor Invest}
+	{Moscow}
+	{Jan 2023 – Present}
+	{\begin{cvitems}
+			\item {Come up with new HFT MM and Arbitrage strategies and implement them in C++}
+			\item {Create data analysis tools}
+			\item {Monitor trading activities, track and assess strategy performance}
+		\end{cvitems}}
+
+	\cventry
+	{Intern Researcher}
+	{HSE Laboratory of AI in Mathematical Finance}
+	{Moscow}
+	{Sep 2023 - Jun 2024}
+	{\begin{cvitems}
+			\item{Research pairs trading strategies on MOEX}
+		\end{cvitems}
+	}
+
+	\cventry
+	{ML Intern}
+	{HSE Robotics Group}
+	{Moscow}
+	{Jul 2022 – June 2023}
+	{\begin{cvitems}
+			\item {Research and implement Reinforcement Learning algorithms}
+			\item {Implement a Python simulator for CartPole problem}
+			\item {Integration with the existing technology stack}
+		\end{cvitems}}
+
+	\cventry
+	{Teaching Assistant}
+	{Higher School of Economics}
+	{Moscow, Russia}
+	{Sep 2021 – June 2023}
+	{\begin{cvitems}
+			\item {Hold office hours and consultations, Check and grade homeworks}
+			\item {Worked as a TA on the following courses: Introduction to Programming (Python, C++), Algorithms and Data Structures, Computer Architecture and Operating Systems}
+		\end{cvitems}}
+\end{cventries}
+
+\vspace{-5mm}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+				Spoken Languages:      & {\skill{ Russian (native), English (C1 IELTS Academic)}}                                          \\
+				Python:                & {\skill{ PyTorch, SKLearn, Pandas, Numpy, Seaborn, Matplotlib, multiprocessing, parsing}}         \\
+				C++:                   & {\skill{ STL, QT, Algorithms and Data Structures}}                                                \\
+				ML \& DL:              & {\skill{ Classical ML models, ANNs, basics of Reinforcement Learning, basics of Computer Vision}} \\
+				Statistics \& Finance: & {\skill{ Black-Scholes, Time Series and Stochastic Processes, ARCH, GARCH, Econometrics}}         \\
+				Rust:                  & {\skill{ STL, Tokio, egui}}                                                                       \\
+			\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-5mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{In this project, I researched the applicability of classical HFT pairs strategies on Moscow Stock Exchange. The project used an industry-grade backtester with Limit Order Book data, real-world latencies and commissions. Also, I suggested an improvement to the base algorithm, resulting in greater profitability and smoother equity plot.}
+	{Search for Arbitrage Opportunities}
+	{C++, Python}
+	{}
+	{}
+	\vspace{-5mm}
+
+	\cventry
+	{I coded a custom physics engine and trained an RL agent to swing up the pole. This involved implementation of several RL algorithms from scratch, but we stopped on DDPG, since it showed the best performance with regard to training time.}
+	{CartPole RL}
+	{Python, PyTorch}
+	{}
+	{}
+	\vspace{-5mm}
+
+	\cventry
+	{A custom graph preprocessing algorithm for Graph Neural Networks, allowing us to merge some nodes in the graph, resulting in 22\% decrease in nodes number and 57\% decrease in edges number, while dropping accuracy by only 7\%.}
+	{Topological Deep Learning}
+	{Python, Pytorch-Geometric}
+	{}
+	{}
+	\vspace{-5mm}
+\end{cventries}
+
+\
+\end{document}
